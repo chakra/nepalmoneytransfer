@@ -1,0 +1,53 @@
+<!--
+  Generated template for the Login page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+  <ion-navbar>
+    <ion-title>&nbsp;&nbsp;Login </ion-title>
+  </ion-navbar>
+      
+
+</ion-header>
+
+<form [formGroup]="loginForm">  
+<ion-content padding class="login-content ">
+
+ 
+  <ion-card>
+      <img src="assets/img/login_bg.jpg"/>
+    </ion-card>  
+   
+  <ion-item>
+    <ion-label stacked >Username</ion-label>
+     <ion-input #email formControlName="email" type="email" (change)="elementChanged(email)"
+        placeholder="Your email address"
+        [class.invalid]="!loginForm.controls.email.valid && (emailChanged || submitAttempt)"></ion-input>
+  </ion-item>
+   <ion-item class="error-message" *ngIf="!loginForm.controls.email.valid  && (emailChanged || submitAttempt)">
+      <p>Please enter a valid email.</p>
+    </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Password</ion-label>
+    <ion-input [(ngModel)]="password" type="password" name="password" formControlName="password" 
+                [class.invalid]="!loginForm.controls.password.valid && (loginForm.controls.password.dirty || submitAttempt)"></ion-input>
+      
+  </ion-item>
+   
+<div style="margin-left:10px; margin-top:15px">
+<button class="button button-stable button-block" ion-button (click)="login()">
+    <ion-icon name="log-in"></ion-icon>&nbsp;
+    Log-IN
+  </button>
+</div>    
+<div style="text-align: center; margin-top:20px">
+    <ion-label>&nbsp;Not registered yet ?&nbsp; <a href="#" (click)="launchSignup()">sign up here</a></ion-label>
+    <ion-label style="margin-top: 15px; margin-bottom: 15px">OR</ion-label>
+    <ion-label>If forgot password, then &nbsp;<a href="#" (click)="resetPassword()">reset please !</a></ion-label>
+    </div>    
+
+</ion-content>

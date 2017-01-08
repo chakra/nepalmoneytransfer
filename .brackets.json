@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/chakrabhandari/Projects/ionic_projects/nepalmoneytransfer/platforms/ios/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "/Users/chakrabhandari/Projects/ionic_projects/nepalmoneytransfer/plugins/cordova-plugin-console/www/console-via-logger.js",
+        "/Users/chakrabhandari/Projects/ionic_projects/nepalmoneytransfer/plugins/cordova-plugin-console/www/logger.js",
+        "/Users/chakrabhandari/Projects/ionic_projects/nepalmoneytransfer/plugins/cordova-plugin-device/src/blackberry10/index.js"
+    ]
+}

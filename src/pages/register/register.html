@@ -1,0 +1,129 @@
+<!--
+  Generated template for the Register page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>&nbsp;&nbsp;Registration</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<form [formGroup]="registrationForm">    
+<ion-label>&nbsp;&nbsp;&nbsp;Account Details</ion-label>     
+ <ion-card >
+    <ion-item>
+    <ion-label stacked >First Name</ion-label>
+    <ion-input type="text" formControlName="firstname" name="firstname"></ion-input>
+  </ion-item>
+    
+  <ion-item>
+    <ion-label stacked >Middle Name</ion-label>
+    <ion-input type="text" formControlName="middlename" name="middlename"></ion-input>
+  </ion-item>  
+    
+ <ion-item>
+    <ion-label stacked >Last Name</ion-label>
+    <ion-input type="text" formControlName="lastname" name="lastname"></ion-input>
+  </ion-item>     
+ 
+    <ion-item>
+    <ion-label stacked >Email</ion-label>
+    <ion-input type="text" formControlName="username" name="username"></ion-input>
+  </ion-item> 
+  
+  <ion-item>
+    <ion-label stacked >Password</ion-label>
+    <ion-input type="password" formControlName="password" name="password"></ion-input>
+  </ion-item> 
+
+ <ion-item>
+    <ion-label stacked >Re-enter Password</ion-label>
+    <ion-input type="password" formControlName="passwordconfirm" name="passwordconfirm"></ion-input>
+  </ion-item> 
+
+</ion-card> 
+    <!--
+<ion-label>&nbsp;&nbsp;&nbsp;Address</ion-label>     
+<ion-card>
+  <ion-item>
+    <ion-label stacked >Home Address</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-label stacked >Postal Code </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>  
+
+  <ion-item>
+    <ion-label stacked >Phone Number </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item> 
+
+ <ion-item> 
+ <ion-label style="font-size:14px">State</ion-label>     
+ <ion-select [(ngModel)]="state">
+      <ion-option value="nsw">NSW</ion-option>
+      <ion-option value="qld">QLD</ion-option>
+      <ion-option value="sa">SA</ion-option>
+      <ion-option value="tas">TAS</ion-option>
+      <ion-option value="vic">VIC</ion-option>
+      <ion-option value="wa">WA</ion-option>
+ </ion-select>    
+</ion-item>         
+</ion-card>
+<ion-label>&nbsp;&nbsp;&nbsp;Bank Details</ion-label> 
+<ion-card>
+<ion-item>
+    <ion-label stacked >Bank Address</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-label stacked >Postal Code </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>  
+
+  <ion-item>
+    <ion-label stacked >BSB Number </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item> 
+
+ <ion-item>
+    <ion-label stacked >Account Number </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>     
+
+ <ion-item> 
+ <ion-label style="font-size:14px">State</ion-label>     
+ <ion-select [(ngModel)]="state">
+      <ion-option value="nsw">NSW</ion-option>
+      <ion-option value="qld">QLD</ion-option>
+      <ion-option value="sa">SA</ion-option>
+      <ion-option value="tas">TAS</ion-option>
+      <ion-option value="vic">VIC</ion-option>
+      <ion-option value="wa">WA</ion-option>
+ </ion-select>    
+</ion-item>   
+</ion-card>    -->
+    
+
+<ion-item>
+  <ion-label style="font-size:12px;margin-left:2px;border-bottom:none">Accept <a href="#">Terms & Conditions</a></ion-label>
+  <ion-checkbox color="dark" checked="false"></ion-checkbox>
+</ion-item>    
+    
+<div style="margin-left:10px; margin-top:15px">
+    
+<button class="button button-stable button-block" ion-button>
+    <ion-icon name="log-in"></ion-icon>&nbsp;
+    Register Me !
+  </button>
+</div>   
+</form>   
+    
+</ion-content>
